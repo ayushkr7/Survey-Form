@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Sports Survey Form</title>
+        <meta charset="UTF-8">
+    <link rel="stylesheet" href="Survey Form.css" type="text/css">
+    </head>
+    <body >
+        <div class="form-group">
+            <h1 id="title">Survey On Your Preferred Game To Play</h1>
+            <p id="description"><i>To know game preference preference of age group 5-60.</i></p>
+        </div>
+        <form action="" id="survey-form">
+            <div class="queries"><label id="name-label">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br></div>
+
+            <div class="queries"><label id="email-label">Enter your mail id.</label><br>
+            <input type="email" id="email" placeholder="Enter your E-mail id."  required><br></div>
+
+            <div class="queries"><label id="number-label">Age</label><br> 
+            <input type="number" id="number" placeholder="Enter your age" min="5" max="60"><br></div>
+
+            <div class="queries"><label>Which option best describes your current role?<br></label>
+            <select id="dropdown" name="role" class="form-control" required="">
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select><br></div>
+
+            <div class="queries"><br><label>What kind of game do you play?</label><br>
+                <input name="user-recommend" value="Indoor" type="radio" class="input-radio" >Indoor<br>
+                <label><input name="user-recommend" value="Outdoor" type="radio" class="input-radio">Outdoor</label><br>
+                <label><input name="user-recommend" value="None" type="radio" class="input-radio">None</label><br>
+            </div>
+
+                <div class="queries"><br><label>Choose the games that you like to play.</label>
+                <label><input type="checkbox" value="game">Football</label><br>
+                <label ><input type="checkbox" value="game">Basketball</label><br>
+                <label ><input type="checkbox" value="game">Cricket</label><br>
+                <label ><input type="checkbox" value="game">Chess</label><br>
+                <label ><input type="checkbox" value="game">Tennnis</label><br>
+                <label ><input type="checkbox" value="game">Cycling</label><br>
+                <label ><input type="checkbox" value="game">Checkers</label><br>
+                <label ><input type="checkbox" value="game">Kabbadi</label><br>
+                <label ><input type="checkbox" value="game">Other</label><br>
+            </div>
+
+                <div class="queries"><br> <label>Any comments or suggestions from your side?</label><br>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea><br>
+            </div>
+
+                <div class="queries"><button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </body>
+</html>
